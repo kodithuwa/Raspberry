@@ -6,8 +6,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="5.0.0" />
+    <PackageReference Include="NetCoreAudio" Version="1.6.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="RestSharp" Version="106.13.0" />
     <PackageReference Include="System.Device.Gpio" Version="1.5.0" />
       <PackageReference Include="Iot.Device.Bindings" Version="1.5.0" />
       <PackageReference Include="System.Device.Gpio" Version="1.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ImageCapture\UtilityDelta.ImageDiff\UtilityDelta.ImageDiff.csproj" />
   </ItemGroup>
 </Project>

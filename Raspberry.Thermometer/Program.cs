@@ -21,7 +21,7 @@ namespace Raspberry.Thermometer
                     Console.WriteLine($"Object: {sensor.ReadObjectTemperature().DegreesCelsius} Celcius");
                     Console.WriteLine();
 
-                    Thread.Sleep(1000);
+                    Thread.Sleep(100);
                 }
             }
         }

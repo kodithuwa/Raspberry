@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Raspberry.ImageCapture": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}

@@ -49,16 +49,16 @@ namespace Raspberry.LaserCounter
           
             while (true)
             {
-                controller.RegisterCallbackForPinValueChangedEvent(17, PinEventTypes.Rising, RisingHandler);
-                //Thread.Sleep(1000);
-                //if (controller.Read(laserpin) == 0)
-                //{
-                //    Console.WriteLine("Light Detected");
-                //}
-                //else
-                //{
-                //    Console.WriteLine("Laser Not Detected");
-                //}
+                //controller.RegisterCallbackForPinValueChangedEvent(17, PinEventTypes.Rising, RisingHandler);
+                Thread.Sleep(1000);
+                if (controller.Read(laserpin) == 0)
+                {
+                    Console.WriteLine("Light Detected");
+                }
+                else
+                {
+                    Console.WriteLine("Laser Not Detected");
+                }
             }
         }
     }
